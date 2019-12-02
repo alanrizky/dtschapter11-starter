@@ -94,9 +94,7 @@ public class SaveCaloryFragment extends Fragment {
         int id = item.getItemId();
         if (id == R.id.action_save) {
             if (mListener != null) {
-                if (calory == null) {
                     calory = new Calory();
-                }
                 // TODO: Ambil nilai calory yang didapatkan dari tampilan
 
                 mListener.onSaveMenuClicked(getView(), calory);
